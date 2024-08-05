@@ -1,0 +1,104 @@
+.gg {
+    height: 20vw;
+    width: 12vw;
+    /* position: absolute; */
+    border-radius: 50%;
+    background-color: pink;
+    left: 45%;
+    filter: blur(70px);
+  
+    animation: gg 30s infinite alternate;
+    z-index: -1;
+  }
+  
+  @keyframes gg {
+    from {
+      /* transform: translate(-520px, 0px); */
+      transform: translate(750px ,0px);
+    }
+    to {
+      transform: translate(-250%, 50px);
+      /* transform: translate(-200px ,-120px); */
+    }
+  }
+  
+  .gg2 {
+    height: 20vw;
+    width: 10vw;
+    /* position: absolute; */
+    border-radius: 50%;
+    background-color: skyblue;
+    /* left: 45%; */
+    filter: blur(80px);
+  
+    animation: gg2 15s infinite alternate;
+    z-index: -1;
+  }
+  
+  @keyframes gg2 {
+    from {
+      /* transform: translate(520px, 10px); */
+      transform: translate(840px ,50px);
+    }
+    to {
+      transform: translate(-50%, 120px);
+      /* transform: translate(-50% ,-150); */
+    }
+  }
+
+
+
+  /*images*/
+.i1 {
+  /* position: absolute; */
+  /* left: 205px; */
+  /* top: 70px; */
+  animation: float 6s ease-in-out infinite;
+}
+
+.i2 {
+  /* position: absolute; */
+  /* left: -5px; */
+  /* top: 100px; */
+
+  animation: float 6s ease-in-out infinite;
+}
+
+  .i3 {
+    /* position: absolute; */
+  /* right: 250px; */
+    /* top: 88px; */
+  
+    animation: float 6s ease-in-out infinite;
+  }
+
+
+
+.i4 {
+  /* position: absolute; */
+  /* left: 94px; */
+  /* top: 220px; */
+  animation: float 6s ease-in-out infinite;
+}
+
+.i5 {
+  /* position: absolute; */
+  /* right: 10px; */
+  /* top: 170px; */
+
+  animation: float 6s ease-in-out infinite;
+}
+
+  
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }

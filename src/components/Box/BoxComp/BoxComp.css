@@ -1,0 +1,26 @@
+.custom-card {
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  border-width: 3px;
+
+
+}
+.custom-card:hover {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #5f259f 0%, #13457d 50%, #3d54ce 100%) border-box;
+
+  border-image-slice: 1;
+  border-image-source: linear-gradient(99.76deg, #5f259f 9.39%, #0065d3 90.95%);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
