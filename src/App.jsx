@@ -56,7 +56,7 @@ function App() {
 
         {/* <Hr/> */}
       
-        <h1>hello team </h1>
+       
       </div>
     </>
   )
