@@ -20,6 +20,7 @@ const NavBar = () => {
             <img className="" src={logo} alt="hubnex-logo"></img>
           </NavLink>
         </div>
+        
         <div className="flex w-full justify-around ml-14  max-sm:hidden ">
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/About"}>About</NavLink>
@@ -29,6 +30,7 @@ const NavBar = () => {
        
         
         </div>
+        
         <div className=" flex w-full justify-end mr-20 max-md:mr-2 gap-4">
           
           <NavLink
