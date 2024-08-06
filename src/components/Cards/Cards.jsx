@@ -25,7 +25,7 @@ const Cards = () => {
 
   return (
     <>
-   <div className="  overflow-hidden">
+   <div className="  overflow-hidden ">
    <div className=" flex mt-16 flex-col w-full items-center gap-[50px]  justify-center ">
         <div className="head-box flex flex-col justify-center items-center ">
           <h1 className="text-[32px] font-semibold text-center w-[658] max-sm:w-[315px]">Achieve Your Goals in Just 3 Simple Steps</h1>

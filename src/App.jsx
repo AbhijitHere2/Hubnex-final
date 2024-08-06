@@ -9,7 +9,8 @@ import About from './components/About/About'
 import Login from './components/Login/Login'
 import Register from './components/Register/Register'
 import Pricing from './components/Pricing/Pricing'
-import Hr from './components/Domain/Hr/Hr'
+
+
 
 
 function App() {
@@ -51,11 +52,11 @@ function App() {
   return (
  
     <>
-      <div>
+      <div className= "">
         <RouterProvider  router={router}/>
 
-        {/* <Hr/> */}
-      
+  
+        
        
       </div>
     </>

@@ -14,7 +14,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className=" h-16 flex  z-50 bg-slate-50  fixed w-full justify-around items-center pl-5  ">
+      <div className=" h-16 flex  z-50 bg-slate-50  fixed w-full justify-around items-center  ">
         <div className="mr-2 px-2 w-full max-lg:w-72  font-semibold text-xl">
           <NavLink to={"/"}>
             <img className="" src={logo} alt="hubnex-logo"></img>
