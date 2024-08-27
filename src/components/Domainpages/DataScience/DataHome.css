@@ -1,0 +1,87 @@
+*{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.con11 {
+
+    width: 100%;
+    height: 530px;
+    /* background-color: red; */
+
+
+    border-radius: 15px;
+    background-image: url('https://cdn.usegalileo.ai/sdxl10/841d93c2-93b0-4d81-9648-add338f80405.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /*  clinear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) ); */
+
+
+}
+
+.con1 {
+    height: 400px;
+}
+
+.con2 {
+    height: 530px;
+    margin-top: -530px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4));
+}
+
+/* .copy-comp{
+    position: absolute;
+    top: 1417px;
+} */
+.benifit {
+    margin-left: 115px;
+}
+
+.employe {
+    margin-left: 115px;
+}
+
+.emhead {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.new1 {
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    height: 100px;
+    width: 180px;
+
+    max-width: 180px;
+    min-width: 180px;
+    border-radius: 15px;
+    margin-right: 4px;
+    margin-top: 10px;
+
+}
+.new2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+ 
+}
+.clsimg{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.btn{
+   
+    margin-left: 810px;
+}
+.Ft{
+    margin-left: 400px;
+}
+
+
