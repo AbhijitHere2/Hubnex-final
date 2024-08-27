@@ -39,7 +39,7 @@ const Certificate = () => {
 
   return (
    <div className="w-full flex justify-center">
-        <div className="container mb-6  bg-slate-400">
+        <div className="container mb-6 ">
       <div className="id-card-text">
         <h3>Certificate</h3>
         <small>

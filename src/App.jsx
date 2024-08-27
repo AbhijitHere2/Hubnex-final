@@ -19,7 +19,7 @@ function App() {
   
     {
       path:"/",
-      element:<><NavBar/><Home/></>
+      element:<><NavBar/><Home /></>
     },
     {
       path:"/About",
@@ -53,7 +53,7 @@ function App() {
  
     <>
       <div className= "">
-        <RouterProvider  router={router}/>
+        <RouterProvider   router={router}/>
 
   
         
