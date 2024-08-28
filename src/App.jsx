@@ -6,7 +6,7 @@ import Home from './components/Home/Home'
 import Services from './components/Services/Services'
 import Blog from './components/Blog/Blog'
 import About from './components/About/About'
-import Login from './components/Login/Login'
+import Login from './components/Login/SignIn'
 import Register from './components/Register/Register'
 import Pricing from './components/Pricing/Pricing'
 import Marketing from './components/Domainpages/Marketing'
@@ -15,7 +15,7 @@ import HR from './components/Domainpages/HR'
 import UIUX from './components/Domainpages/UIUX/index'
 import Frontend from './components/Domainpages/Frontend/index'
 import Fullstack from './components/Domainpages/Fullstack/index'
-import DataScience from './components/Domainpages/DataScience/DataHome'
+import DataScience from './components/Domainpages/DataScience'
 import Finance from './components/Domainpages/Finance/Finance'
 
 
@@ -48,11 +48,11 @@ function App() {
    
     {
       path:"/Login",
-      element:<><NavBar/><Login/></>
+      element:<Login/>
     },
     {
       path:"/Register",
-      element:<><NavBar/><Register/></>
+      element:<Register/>
     }
     ,
     {
@@ -72,11 +72,12 @@ function App() {
       path:"/Finance",
       element:<><NavBar/><Finance/></>
     },
+   
     {
       path:"/DataScience",
       element:<><NavBar/><DataScience/></>
-    }
-    ,
+    },
+
     {
       path:"/Frontend",
       element:<><NavBar/><Frontend/></>

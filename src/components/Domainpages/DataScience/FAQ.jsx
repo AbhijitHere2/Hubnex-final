@@ -1,164 +1,90 @@
-import React, { useState } from "react";
-
-import f1 from "../../images/DataSci/f1.png"
-import f2 from "../../images/DataSci/f2.png"
-import f3 from "../../images/DataSci/f3.png"
-
+import React from "react";
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <div className="max-w-6xl mx-auto p-5 md:px-4  lg:px-28 Ft">
-      <h2 className="text-2xl font-bold mb-4">FAQ</h2>
-      <div className="divide-y divide-gray-200">
-        {[
-          {
-            question: "What are the prerequisites for this workshop?",
-            answer:
-              "Before attending the finance workshop, it's essential to have a basic understanding of accounting principles, financial statements, and economic concepts. Familiarity with spreadsheets, basic investment knowledge, and analytical skills are beneficial. A keen interest in financial markets and a willingness to engage with complex topics will enhance gour learning experience.",
-          },
-          {
-            question: "Is this workshop suitable for beginners?",
-            answer:
-              "Yes, the finance workshop is suitable for beginners. It starts with fundamental concepts, making it accessible to those with little to no prior knowledge of finance. The course builds a solid foundation, gradually introducing more complex topics to ensure a comprehensive understanding.",
-          },
-          {
-            question: "Will I get a certificate after completing the workshop?",
-            answer:
-              "Yes, you will receive a certification upon successful completion of the workshop. This certificate will recognize your participation and the skills you've gained, which can be valuable for career advancement and showcasing your expertise in the field.",
-          },
-          {
-             question: "Can I cancel my enrollment and get a refund?",
-           answer:
-              'Yes, you can cancel your enrollment. For checking the refund policy, please <a href="https://example.com/refund-policy" className="text-blue-500  underline hover:text-blue-700">click here</a>.',
-          },
-        ].map((faq, index) => (
-          <div key={index} className="py-4">
-            <button
-              className="w-full flex justify-between items-center text-lg font-medium text-gray-700 focus:outline-none"
-              onClick={() => toggleFAQ(index)}
-            >
-              <span>{faq.question}</span>
-              <svg
-                className={`w-6 h-6 transform transition-transform ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
+    <div className="flex  max-w-6xl  mx-auto flex-col  px-14 py-10  ">
+      <h2 className="text-[#0d151c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">FAQ</h2>
+      <div className="flex flex-col p-4 gap-3">
+        <details className="flex flex-col rounded-xl border border-[#cedde8] bg-slate-50 px-[15px] py-[7px] group" open>
+          <summary className="flex cursor-pointer items-center justify-between gap-6 py-2">
+            <p className="text-[#0d151c] text-sm font-medium leading-normal">What are the prerequisites for the workshop?</p>
+            <div className="text-[#0d151c] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
               </svg>
-            </button>
-            {openIndex === index && (
-              <div
-                className="mt-2 text-blue-600 font-normal"
-                dangerouslySetInnerHTML={{ __html: faq.answer }}
-              ></div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div className="max-w-6xl mx-auto   ">
-      <h2 className="text-2xl font-bold mb-8 mt-8">Upcoming Workshops</h2>
-      <div className="flex flex-col md:flex-row md:space-x-4">
-        {/* Workshop Card 1 */}
-        <div className="flex-1 mb-6 md:mb-0">
-          <img src={f1} alt="Employee Relations workshop" className="h-80 w-full object-cover rounded-xl mx-auto" />
-          <div className="font-bold text-lg mt-2 text-center">
-          Financial Analysis Workshop<br />
-            {/* <span className="font-normal text-blue-700">August 15th, 2024</span> */}
-          </div>
-        </div>
-
-        {/* Workshop Card 2 */}
-        <div className="flex-1 mb-6 md:mb-0 px-0">
-          <img src={f2} alt="Talent Management workshop" className="h-80 w-full object-cover rounded-xl mx-auto" />
-          <div className="font-bold text-lg mt-2 text-center">
-          Investment Management Workshop <br />
-            {/* <span className="font-normal text-blue-700">August 22nd, 2024</span> */}
-          </div>
-        </div>
-
-        {/* Workshop Card 3 */}
-        <div className="flex-1 mb-6 md:mb-0">
-          <img src={f3} alt="Diversity and Inclusion workshop" className="h-80 w-full object-cover rounded-xl mx-auto" />
-          <div className="font-bold text-lg mt-2 text-center">
-          Risk Management Workshop <br />
-            {/* <span className="font-normal text-blue-700">August 29th, 2024</span> */}
-          </div>
-        </div>
-      </div>
-    </div><br/><br/>
-
-    
-      {/* <footer className="bg-black text-white py-8 px-4">
-
-        
-        <hr className="border-t border-gray-300 mb-8" />
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-         
-          <div>
-            <h3 className="text-lg font-semibold mb-2">COMPANY</h3>
-            <ul>
-              <li className="mb-1"><a href="#" className="hover:underline">About Us</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Privacy policy</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Blog</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Careers</a></li>
-            </ul>
-          </div>
-
-       
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Support</h3>
-            <ul>
-              <li className="mb-1"><a href="#" className="hover:underline">Contact Us</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Community</a></li>
-            </ul>
-          </div>
-
-    
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Socials</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-black">
-                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-black">
-                <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-black">
-                <FontAwesomeIcon icon={faTwitter} className="h-6 w-6" />
-              </a>
             </div>
-          </div>
+          </summary>
+          <p className="text-[#49779c] text-sm font-normal leading-normal pb-2">
+          It's recommended to have a basic understanding of programming, especially in Python, and familiarity with statistics and linear algebra. Experience with data manipulation and visualization tools will be helpful. A curious mindset and problem-solving skills are key for tackling data-driven challenges.
+          </p>
+        </details>
 
-         
+        <details className="flex flex-col rounded-xl border border-[#cedde8] bg-slate-50 px-[15px] py-[7px] group">
+          <summary className="flex cursor-pointer items-center justify-between gap-6 py-2">
+            <p className="text-[#0d151c] text-sm font-medium leading-normal">Is this workshop suitable for beginners?</p>
+            <div className="text-[#0d151c] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </div>
+          </summary>
+          <p className="text-[#49779c] text-sm font-normal leading-normal pb-2">
+          Yes, the workshop is designed to accommodate beginners, providing foundational knowledge in data science concepts and tools. It's structured to progressively build skills, making it suitable for those new to the field and eager to learn.
+          </p>
+        </details>
+
+        <details className="flex flex-col rounded-xl border border-[#cedde8] bg-slate-50 px-[15px] py-[7px] group">
+          <summary className="flex cursor-pointer items-center justify-between gap-6 py-2">
+            <p className="text-[#0d151c] text-sm font-medium leading-normal">Will I get a certificate after completing the workshop?</p>
+            <div className="text-[#0d151c] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </div>
+          </summary>
+          <p className="text-[#49779c] text-sm font-normal leading-normal pb-2">
+          Yes, you will receive a certification upon successful completion of the workshop. This certificate will recognize your participation and the skills you've gained, which can be valuable for career advancement and showcasing your expertise in the field.
+          </p>
+        </details>
+
+      
+      </div>
+
+      <h2 className="text-[#0d151c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Upcoming Workshops</h2>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+        <div className="flex flex-col gap-3 pb-3">
+          <div
+            className="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+            style={{ backgroundImage: 'url("https://cdn.usegalileo.ai/sdxl10/b67ad156-29ad-4030-9081-b43af1b539eb.png")' }}
+          ></div>
           <div>
-            <h2 className="text-lg font-semibold mb-2">Sign Up</h2>
-            <form className="mt-3">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                className="border px-3 py-2 w-full rounded"
-              />
-            </form>
+            <p className="text-[#0d151c] text-base font-medium leading-normal">Data Preprocessing Workshop</p>
+            <p className="text-[#49779c] text-sm font-normal leading-normal"></p>
           </div>
         </div>
-      </footer> */}
+
+        <div className="flex flex-col gap-3 pb-3">
+          <div
+            className="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+            style={{ backgroundImage: 'url("https://cdn.usegalileo.ai/stability/c91a82d9-1e74-4d78-9c70-a753765d3460.png")' }}
+          ></div>
+          <div>
+            <p className="text-[#0d151c] text-base font-medium leading-normal">Machine Learning Workshop</p>
+            <p className="text-[#49779c] text-sm font-normal leading-normal"></p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-3 pb-3">
+          <div
+            className="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+            style={{ backgroundImage: 'url("https://cdn.usegalileo.ai/sdxl10/d97e75c3-056b-4898-8d16-fa905fafca09.png")' }}
+          ></div>
+          <div>
+            <p className="text-[#0d151c] text-base font-medium leading-normal">Deep Learning Workshop</p>
+            <p className="text-[#49779c] text-sm font-normal leading-normal"></p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

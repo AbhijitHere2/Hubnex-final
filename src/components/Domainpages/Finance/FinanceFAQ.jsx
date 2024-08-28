@@ -14,7 +14,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-5">
+    <div className="max-w-6xl mx-auto p-10 px-28">
       <h2 className="text-2xl font-bold mb-4">FAQ</h2>
       <div className="divide-y divide-gray-200">
         {[

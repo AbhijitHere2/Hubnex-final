@@ -61,7 +61,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./facebook.png" alt="facebook" target="blank" />
+                <img src="./footer-facebook.png" alt="facebook" target="blank" />
               </a>
             </li>
             <li>

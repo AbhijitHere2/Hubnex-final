@@ -30,7 +30,7 @@ function Finance() {
          
           
         </div>
-        <div className="max-w-6xl mx-auto p-5">
+        <div className="max-w-6xl mx-auto p-20">
             <h1 className="text-[#0d151c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-3 pt-5">
               Weekly Learning Objectives
             </h1>

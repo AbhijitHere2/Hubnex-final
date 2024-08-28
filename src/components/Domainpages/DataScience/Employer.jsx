@@ -2,9 +2,9 @@ import React from 'react';
 
 const EmployerPartners = () => {
   return (
-    <div className= " md:px-4 lg:px-48 font-inter employe">
-      {/* <h1 className="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-8 pt-6">
-        Our Employer Partners
+    <div className= " max-w-6xl mx-auto md:w-[80%]  px-8 font-inter">
+      <h1 className="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-8 pt-6">
+      Our Employer Partners
       </h1>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(168px,1fr))] gap-3">
         {[
@@ -24,13 +24,13 @@ const EmployerPartners = () => {
             ></div>
           </div>
         ))}
-      </div> */}
-      {/* <div className="flex px-4 py-3 justify-end">
+      </div>
+      <div className="flex px-4 py-3 justify-end">
        <a href="https://hubnex.in/"> <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2094f3] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
           <span className="truncate">Get started</span>
         </button></a>
-      </div> */}
-      <h1 className="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6 emhead">
+      </div>
+      <h1 className="text-[#0d151c] tracking-light text-[22px] font-bold leading-tight px-4 text-start pb-3 pt-6">
         What Our Students Say
       </h1>
       <div className="flex flex-col gap-8 overflow-x-hidden bg-slate-50 p-4">
@@ -39,7 +39,7 @@ const EmployerPartners = () => {
             name: "Rachel Williams",
             date: "June 1, 2024",
             review:
-              "The program is fantastic. It's helped me learn a lot about Finance. I've improved my skills, learned new tools, and gained valuable insights. I've also learned a lot about the industry and the role of a Financial Analyst.",
+              "The program is fantastic. It's helped me learn a lot about Full Stack Development. I've improved my skills, learned new tools, and gained valuable insights. I've also learned a lot about the industry and the role of a Full Stack Developer.",
             likes: 5,
           },
           {
@@ -47,14 +47,14 @@ const EmployerPartners = () => {
             date: "May 15, 2024",
             review:
               "I learned a lot from this program. The instructors were great, and the content was very relevant. I've already started applying what I learned in my projects, and I'm seeing results. I would definitely recommend this program to others.",
-            likes: 9,
+            likes: 7,
           },
 
           {
             name: "Sarah Johnson",
             date: "April 30, 2024",
             review:
-              "This program is excellent. It covers all the essential Finance skills, and the instructors are very knowledgeable. I've gained a lot of valuable insights that I can apply to my work. I'm looking forward to the next session.",
+              "This program is excellent. It covers all the essential Full Stack Development skills, and the instructors are very knowledgeable. I've gained a lot of valuable insights that I can apply to my work. I'm looking forward to the next session.",
             likes: 4,
           },
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const EmployerPartners = () => {
   return (
-    <div className= "max-w-6xl mx-auto p-5">
+    <div className= "max-w-6xl mx-auto px-24">
       <h1 className="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-8 pt-6">
         Our Employer Partners
       </h1>
