@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Registration.css";
+import "./Register.css";
 
-const Registration = () => {
+const Register = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -151,4 +151,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default Register;

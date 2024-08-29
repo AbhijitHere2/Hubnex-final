@@ -1,7 +1,7 @@
 import React from "react";
 import "./Ui.css";
 import Benifit from "./Benifit";
-import EmployerPartners from "./employer";
+import EmployerPartners from "./Employer";
 import FAQ from "./FAQ";
 import Footer from "../../Footer/Footer";
 

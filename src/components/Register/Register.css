@@ -260,3 +260,104 @@
   position: relative;
   
 }
+
+@media  (max-width: 480px) {
+  .registration-main {
+    flex-direction: column;
+  }
+  
+  .left-container {
+    width: 580px;
+    height:100vh;
+  }
+  
+  .slider-img {
+    width: 100vh;
+    height:100vh;
+    margin-left: 20px;
+    opacity: 0;
+    animation: slide 30s infinite;
+  }
+
+  
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  position: relative;
+top: 20px;
+  left: 250px;
+  cursor: pointer;
+}
+
+.social-logo {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  
+}
+  
+
+
+
+
+
+}
+
+
+@media  (max-width: 768px) {
+  .registration-main {
+    flex-direction: column;
+  }
+  
+  .left-container {
+    width: 580px;
+    height:100vh;
+  }
+  
+  .slider-img {
+    width: 100vh;
+    height:100vh;
+    position: absolute;
+    left: 80px;
+    opacity: 0;
+    animation: slide 30s infinite;
+  }
+
+
+
+
+
+}
+
+@media  (max-width: 1024px) {
+  .registration-main {
+    flex-direction: column;
+  }
+  
+  .left-container {
+    width: 380px;
+    height:100vh;
+  }
+  
+  .slider-img {
+    width: 480px;
+    height:100vh;
+    position: absolute;
+    left: 210px;
+  }
+  
+
+  .contact-inputs {
+    width: 422px;
+    height: 50px;
+    left: 30px;
+    position: relative;
+    gap: 0px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    opacity: 0px;
+  }
+
+
+}
