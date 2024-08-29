@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Chatbot.css";
-import ReactHtmlParser from "react-html-parser";
+import parse from "html-react-parser";
 import {
   renderWelcomeOptions,
   renderOptions,
@@ -147,7 +147,7 @@ const Chatbot = () => {
           <div className="chat-body" id="chat-body" ref={chatBodyRef}>
             {messages.map((msg, index) => (
               <div key={index} className={`message ${msg.type}`}>
-                <strong>{msg.sender}:</strong> {ReactHtmlParser(msg.text)}
+                <strong>{msg.sender}:</strong> {parse(msg.text)}
               </div>
             ))}
           </div>
